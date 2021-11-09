@@ -1,0 +1,13 @@
+{% extends "layout.njk" %}
+{% block content %}
+  <div class="wrapper">
+    <img src="https://avatars.githubusercontent.com/u/65626953?v=4" alt="Elcio Pereira">
+      <h1>{{ items.name }}</h1>
+      <h2>{{ items.description }}</h2>
+    </div>
+    <div class="links-footer">
+      {%for item in items.links%}
+      <a href="" target="_blank">{{ item.name }}</a>
+       {%endfor%}
+    </div>
+  {% endblock %}
